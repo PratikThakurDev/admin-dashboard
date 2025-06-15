@@ -26,7 +26,7 @@ body{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 51;
+    grid-row-end: 25;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 80px repeat(5,40px) 80px repeat(3,40px);
     padding-left: 20px;
@@ -122,12 +122,14 @@ input:focus{
     column-gap: 20px;
 }
 .line1{
+    font-weight: 800;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3; 
 }
 .line2{
+    font-weight: 800;
     margin-top: -5px;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -185,4 +187,84 @@ input:focus{
 }
 .button.upload:hover {
     background-color: #d97706;
+}
+.content{
+    display: grid;
+    grid-row-start: 5;
+    grid-row-end: 25;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows: 50px 200px 70px 230px;
+    background-color: #f1f5f9;
+    column-gap: 40px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+.text2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.card-section{
+    
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: 300px 300px;
+    gap: 40px;
+    
+}
+.card{
+    width: 250px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 3px solid orange;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+.box1{
+    display: grid;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #ffffff;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    align-self: center;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+}
+.text{
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+.box2{
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    
+
+}
+.box1 ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+a:hover{
+    color: #1d4ed8;
+    text-decoration: underline;
 }
